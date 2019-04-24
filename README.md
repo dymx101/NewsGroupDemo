@@ -1,4 +1,4 @@
-#Coding challenge    
+# Coding challenge    
 
 We’d like for you to complete the following exercise and submit it to us for review in an email with the project attached as a zip file so that we can better understand your skills. For this exercise, you will be building a simple photo viewing app for iOS. Requirements:    
 
