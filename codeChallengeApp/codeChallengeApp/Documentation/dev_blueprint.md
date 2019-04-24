@@ -1,3 +1,15 @@
+## Dev Tasks
+### DONE
+- create files and folders
+- integrate libraries using cocoapods
+- DI class
+- Endpoint class
+
+### TODO
+- Photo class
+- NetworkManager
+
+
 ##  Library needed
 
 Network: `AlamoFire`
