@@ -12,6 +12,6 @@ protocol PhotoListItemCellViewModelProtocol {
     
 }
 
-class PhotoListItemCellViewModel {
+class PhotoListItemCellViewModel: PhotoListItemCellViewModelProtocol {
     
 }

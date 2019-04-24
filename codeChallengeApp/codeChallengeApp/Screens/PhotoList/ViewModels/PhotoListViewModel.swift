@@ -12,6 +12,6 @@ protocol PhotoListViewModelProtocol {
     
 }
 
-class PhotoListViewModel {
+class PhotoListViewModel: PhotoListViewModelProtocol {
     
 }

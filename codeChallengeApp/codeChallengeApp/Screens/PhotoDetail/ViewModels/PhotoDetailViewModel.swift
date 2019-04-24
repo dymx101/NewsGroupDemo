@@ -12,6 +12,6 @@ protocol PhotoDetailViewModelProtocol {
     
 }
 
-class PhotoDetailViewModel {
+class PhotoDetailViewModel: PhotoDetailViewModelProtocol {
     
 }
