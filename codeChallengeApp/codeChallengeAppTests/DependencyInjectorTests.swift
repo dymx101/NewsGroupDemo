@@ -14,9 +14,9 @@ class codeChallengeAppTests: XCTestCase {
     let injector = DependencyInjector.shared
 
     func testResolveViewModels() {
-        XCTAssertNotNil(injector.resolve(PhotoListViewModelProtocol.self), "PhotoListViewModelProtocol DI fails")
-        XCTAssertNotNil(injector.resolve(PhotoDetailViewModelProtocol.self), "PhotoListViewModelProtocol DI fails")
-        XCTAssertNotNil(injector.resolve(PhotoListItemCellViewModelProtocol.self), "PhotoListViewModelProtocol DI fails")
+        XCTAssertNotNil(injector.resolve(PhotoListViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
+        XCTAssertNotNil(injector.resolve(PhotoDetailViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
+        XCTAssertNotNil(injector.resolve(PhotoListItemCellViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
     }
 
 }
