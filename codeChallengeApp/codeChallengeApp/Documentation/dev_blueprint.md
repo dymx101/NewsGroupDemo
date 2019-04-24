@@ -67,6 +67,8 @@ case `getPhotoList`
 - loadPhotoList(): [`Photo`]
 - removeAllPhotos()
 
+5. `DependencyInjector`
+
 ## Coordinator design
 - `Coordinator`
 - `PhotoListCoordinator`: `Coordinator`
