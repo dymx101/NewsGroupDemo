@@ -82,6 +82,7 @@ case `getPhotoList`
 - NetworkManagerTests
 - EndpointTests
 - DatabaseManagerTests
+- DependencyInjectorTests
 
 ## UI Test
 - Click the first cell in the photo list screen

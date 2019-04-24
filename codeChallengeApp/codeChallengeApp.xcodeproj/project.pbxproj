@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FF8E1A62823988B0444FF03 /* Pods_codeChallengeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */; };
 		8CB86C6622709DAB00755582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86C6522709DAB00755582 /* AppDelegate.swift */; };
 		8CB86C6B22709DAB00755582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB86C6922709DAB00755582 /* Main.storyboard */; };
 		8CB86C6D22709DAD00755582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB86C6C22709DAD00755582 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06DFBC536C6393B91BA213F5 /* Pods-codeChallengeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB86C6222709DAB00755582 /* codeChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB86C6522709DAB00755582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CB86C6A22709DAB00755582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		8CB86CBE2270BA7200755582 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8CB86CC02270BA9000755582 /* PhotoListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListCoordinator.swift; sourceTree = "<group>"; };
 		8CB86CC32270BAC100755582 /* PhotoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailCoordinator.swift; sourceTree = "<group>"; };
+		A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codeChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF8E1A62823988B0444FF03 /* Pods_codeChallengeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,8 @@
 				8CB86C7922709DAD00755582 /* codeChallengeAppTests */,
 				8CB86C8422709DAD00755582 /* codeChallengeAppUITests */,
 				8CB86C6322709DAB00755582 /* Products */,
+				CFA3A8E949BC1908C80A2CB1 /* Pods */,
+				C557E420128BA3A99381B191 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -308,6 +315,23 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		C557E420128BA3A99381B191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFA3A8E949BC1908C80A2CB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06DFBC536C6393B91BA213F5 /* Pods-codeChallengeApp.debug.xcconfig */,
+				A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,9 +339,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CB86C8A22709DAD00755582 /* Build configuration list for PBXNativeTarget "codeChallengeApp" */;
 			buildPhases = (
+				432E3B544DB5A1C40A4124FB /* [CP] Check Pods Manifest.lock */,
 				8CB86C5E22709DAB00755582 /* Sources */,
 				8CB86C5F22709DAB00755582 /* Frameworks */,
 				8CB86C6022709DAB00755582 /* Resources */,
+				F42D50D9311B28A9B35117E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,6 +460,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		432E3B544DB5A1C40A4124FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-codeChallengeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42D50D9311B28A9B35117E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CB86C5E22709DAB00755582 /* Sources */ = {
@@ -628,6 +713,7 @@
 		};
 		8CB86C8B22709DAD00755582 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06DFBC536C6393B91BA213F5 /* Pods-codeChallengeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -647,6 +733,7 @@
 		};
 		8CB86C8C22709DAD00755582 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
