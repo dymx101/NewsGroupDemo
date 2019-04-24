@@ -47,7 +47,7 @@
 		8CB86C8122709DAD00755582 /* codeChallengeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeChallengeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB86C8522709DAD00755582 /* codeChallengeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeChallengeAppUITests.swift; sourceTree = "<group>"; };
 		8CB86C8722709DAD00755582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CB86C9422709DFA00755582 /* dev_plan.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dev_plan.md; sourceTree = "<group>"; };
+		8CB86C9422709DFA00755582 /* dev_blueprint.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dev_blueprint.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 		8CB86C9322709DCE00755582 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				8CB86C9422709DFA00755582 /* dev_plan.md */,
+				8CB86C9422709DFA00755582 /* dev_blueprint.md */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
