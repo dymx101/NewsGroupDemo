@@ -7,7 +7,7 @@ We’d like for you to complete the following exercise and submit it to us for r
 2. The deployment target must be `iOS 11+`.    
 
 3. The application must `download and parse the JSON` found at this URL:     
-http:// jsonplaceholder.typicode.com/photos    
+[Mock API](http://jsonplaceholder.typicode.com/photos)
 
 4. Display the images found at the thumbnail key for each node in the JSON, in either a `UITableView` or `UICollectionView`.    
 
