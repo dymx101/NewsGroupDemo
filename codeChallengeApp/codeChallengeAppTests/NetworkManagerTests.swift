@@ -11,13 +11,13 @@ import XCTest
 
 class NetworkManagerTests: XCTestCase {
     
-    var testObject: NetworkManager!
+    var testObject: NetworkManagerProtocol!
 
     override func setUp() {
         testObject = NetworkManager()
     }
 
-    func testGetDataIsOkay() {
+    func test_getMethod_works() {
         let expect = expectation(description: "request should be complete")
         
         testObject.get(endpoint: Endpoint.photos, responseType: [Photo].self) { (photoList, error) in

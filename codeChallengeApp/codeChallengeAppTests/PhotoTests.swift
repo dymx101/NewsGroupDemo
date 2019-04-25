@@ -13,7 +13,7 @@ class PhotoTests: XCTestCase {
     
     var photo: Photo?
 
-    func testDecodingIsSuccess() {
+    func test_decoding_succeed() {
         let jsonString = """
 {
     "albumId": 1,

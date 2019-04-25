@@ -13,11 +13,12 @@ class codeChallengeAppTests: XCTestCase {
 
     let injector = DependencyInjector.shared
 
-    func testResolveViewModels() {
+    func test_resolveViewModels_succeed() {
         XCTAssertNotNil(injector.resolve(PhotoListViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
         XCTAssertNotNil(injector.resolve(PhotoDetailViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
         XCTAssertNotNil(injector.resolve(PhotoListItemCellViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
         XCTAssertNotNil(injector.resolve(NetworkManagerProtocol.self), "PhotoListViewModelProtocol should be resolved")
+        XCTAssertNotNil(injector.resolve(DatabaseManagerProtocol.self), "DatabaseManagerProtocol should be resolved")
     }
 
 }

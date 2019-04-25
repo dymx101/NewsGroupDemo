@@ -11,7 +11,7 @@ import XCTest
 
 class EndpointTests: XCTestCase {
     
-    func testPhotosEndpointIsCorrect() {
+    func test_getPhotos_suceedAndHasCorrectData() {
         let endpoint = Endpoint.photos
         XCTAssertEqual(endpoint.method.rawValue, "GET", "http method should be correct")
         XCTAssertEqual(endpoint.path, "/photos", "http path should be correct")

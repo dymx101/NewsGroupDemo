@@ -36,5 +36,9 @@ class DependencyInjector {
         worker.register(NetworkManagerProtocol.self) { _ in
             NetworkManager.default
         }
+        
+        worker.register(DatabaseManagerProtocol.self) { _ in
+            DatabaseManager.default
+        }
     }
 }
