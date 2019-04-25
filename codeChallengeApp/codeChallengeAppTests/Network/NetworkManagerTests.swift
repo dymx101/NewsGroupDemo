@@ -28,6 +28,6 @@ class NetworkManagerTests: XCTestCase {
             XCTAssertFalse(photoList!.isEmpty, "photo list should not be empty")
         }
         
-        wait(for: [expect], timeout: 30)
+        wait(for: [expect], timeout: EXPECTATION_TIME_OUT)
     }
 }

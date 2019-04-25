@@ -28,13 +28,13 @@ enum DatabaseType {
     case memory
 }
 
-class DatabaseManager: DatabaseManagerProtocol {
+final class DatabaseManager: DatabaseManagerProtocol {
     
     static let `default` = DatabaseManager()
     
     private var realm: Realm?
     
-    required init(type: DatabaseType = .standard) {
+    init(type: DatabaseType = .standard) {
         realm = try? DatabaseManager.createRealm(type: type)
     }
     

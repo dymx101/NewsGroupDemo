@@ -22,7 +22,9 @@ class DependencyInjector {
     private func setup() {
         
         worker.register(PhotoListViewModelProtocol.self) { _ in
-            PhotoListViewModel()
+            let apiManager = self.resolve(ApiManagerProtocol.self)!
+            let databaseManager = self.resolve(DatabaseManagerProtocol.self)!
+            return PhotoListViewModel(apiManager: apiManager, databaseManager: databaseManager)
         }
         
         worker.register(PhotoDetailViewModelProtocol.self) { _ in
@@ -39,6 +41,11 @@ class DependencyInjector {
         
         worker.register(DatabaseManagerProtocol.self) { _ in
             DatabaseManager.default
+        }
+        
+        worker.register(ApiManagerProtocol.self) { _ in
+            let networkManager = self.resolve(NetworkManagerProtocol.self)!
+            return ApiManager(networkManager: networkManager)
         }
     }
 }
