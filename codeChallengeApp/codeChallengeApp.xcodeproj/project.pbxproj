@@ -31,6 +31,7 @@
 		8CB86CC12270BA9000755582 /* PhotoListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CC02270BA9000755582 /* PhotoListCoordinator.swift */; };
 		8CB86CC42270BAC100755582 /* PhotoDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CC32270BAC100755582 /* PhotoDetailCoordinator.swift */; };
 		8CB86CCA2270C35000755582 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CC92270C35000755582 /* EndpointTests.swift */; };
+		8CB86CCC22713AE100755582 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CCB22713AE100755582 /* PhotoTests.swift */; };
 		F50B9B5159C32F096F4516C0 /* Pods_codeChallengeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB15F6E0DB92A5252CB9178 /* Pods_codeChallengeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		8CB86CC02270BA9000755582 /* PhotoListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListCoordinator.swift; sourceTree = "<group>"; };
 		8CB86CC32270BAC100755582 /* PhotoDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailCoordinator.swift; sourceTree = "<group>"; };
 		8CB86CC92270C35000755582 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		8CB86CCB22713AE100755582 /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 		A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8EE3FC2790B7E9000F929EA /* Pods-codeChallengeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeAppTests/Pods-codeChallengeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codeChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 				8CB86C7A22709DAD00755582 /* DependencyInjectorTests.swift */,
 				8CB86CC92270C35000755582 /* EndpointTests.swift */,
 				8CB86C7C22709DAD00755582 /* Info.plist */,
+				8CB86CCB22713AE100755582 /* PhotoTests.swift */,
 			);
 			path = codeChallengeAppTests;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB86CCC22713AE100755582 /* PhotoTests.swift in Sources */,
 				8CB86CCA2270C35000755582 /* EndpointTests.swift in Sources */,
 				8CB86C7B22709DAD00755582 /* DependencyInjectorTests.swift in Sources */,
 			);

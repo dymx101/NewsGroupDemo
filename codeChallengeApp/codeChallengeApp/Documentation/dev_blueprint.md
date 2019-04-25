@@ -8,6 +8,7 @@
 ### TODO
 - Photo class
 - NetworkManager
+-DatabaseManager
 
 
 ##  Library needed
