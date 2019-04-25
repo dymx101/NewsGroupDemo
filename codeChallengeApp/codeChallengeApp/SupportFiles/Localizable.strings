@@ -8,3 +8,7 @@
 
 "Gallery" = "Photo Gallery";
 "msg_general_api_error" = "Ops, something wrong happens, please try again after a coffee";
+"msg_network_status_not_reachable" = "The network is not reachable";
+"msg_network_status_unknown" = "It is unknown whether the network is reachable";
+"msg_network_status_wifi" = "The network is reachable over the WiFi connection";
+"msg_network_status_wwan" = "The network is reachable over the WWAN connection";

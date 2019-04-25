@@ -23,7 +23,8 @@ enum Endpoint: URLRequestConvertible {
         return try URLEncoding.default.encode(request, with: parameters)
     }
     
-    static let baseURLPath = "http://jsonplaceholder.typicode.com"
+    static let host = "jsonplaceholder.typicode.com"
+    static let baseURLPath = "http://\(host)"
     
     var method: HTTPMethod {
         switch self {

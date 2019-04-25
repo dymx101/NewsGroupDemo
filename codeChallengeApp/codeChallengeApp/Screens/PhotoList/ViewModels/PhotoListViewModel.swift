@@ -13,7 +13,7 @@ protocol PhotoListViewModelProtocol {
     var photos: [Photo] {get}
     
     init(apiManager: ApiManagerProtocol, databaseManager: DatabaseManagerProtocol)
-    func getPhotos(refresh: Bool, completion: @escaping (Result<[Photo], Error>) -> Void)
+    func getPhotos(refresh: Bool, completion: @escaping (Error?) -> Void)
 }
 
 final class PhotoListViewModel: PhotoListViewModelProtocol {
@@ -28,16 +28,25 @@ final class PhotoListViewModel: PhotoListViewModelProtocol {
         self.databaseManager = databaseManager
     }
     
-    func getPhotos(refresh: Bool = false, completion: @escaping (Result<[Photo], Error>) -> Void) {
+    func getPhotos(refresh: Bool = false, completion: @escaping (Error?) -> Void) {
 
         if (!refresh) {
             let photos = databaseManager.loadAllPhotos()
             if (!photos.isEmpty) {
-                completion(.success(photos))
+                self.photos = photos
+                completion(nil)
                 return
             }
         }
         
-        apiManager.getPhotos(completion: completion)
+        apiManager.getPhotos { [weak self] (results) in
+            switch results {
+            case .success(let data):
+                self?.photos = data
+                completion(nil)
+            case .failure(let error):
+                completion(error)
+            }
+        }
     }
 }
