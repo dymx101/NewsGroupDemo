@@ -9,9 +9,18 @@
 import Foundation
 
 protocol PhotoDetailViewModelProtocol {
-    
+    var imageUrl: String {get}
+    var title: String {get}
 }
 
-class PhotoDetailViewModel: PhotoDetailViewModelProtocol {
+final class PhotoDetailViewModel: PhotoDetailViewModelProtocol {
+    var photo: Photo?
     
+    var imageUrl: String {
+        return photo?.url ?? ""
+    }
+    
+    var title: String {
+        return photo?.title ?? ""
+    }
 }

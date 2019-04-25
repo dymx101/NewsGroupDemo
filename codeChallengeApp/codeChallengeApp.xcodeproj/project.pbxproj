@@ -41,6 +41,8 @@
 		8CB86CDC2272084200755582 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CDB2272084200755582 /* ApiManagerTests.swift */; };
 		8CB86CDE22720AA200755582 /* UnitTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CDD22720AA200755582 /* UnitTestConstants.swift */; };
 		8CB86CE122720D2D00755582 /* PhotoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE022720D2D00755582 /* PhotoListViewModelTests.swift */; };
+		8CB86CE52272102E00755582 /* PhotoListItemCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE42272102E00755582 /* PhotoListItemCellViewModelTests.swift */; };
+		8CB86CE7227211FB00755582 /* PhotoDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE6227211FB00755582 /* PhotoDetailViewModelTests.swift */; };
 		F50B9B5159C32F096F4516C0 /* Pods_codeChallengeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB15F6E0DB92A5252CB9178 /* Pods_codeChallengeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +107,8 @@
 		8CB86CDB2272084200755582 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
 		8CB86CDD22720AA200755582 /* UnitTestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestConstants.swift; sourceTree = "<group>"; };
 		8CB86CE022720D2D00755582 /* PhotoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModelTests.swift; sourceTree = "<group>"; };
+		8CB86CE42272102E00755582 /* PhotoListItemCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListItemCellViewModelTests.swift; sourceTree = "<group>"; };
+		8CB86CE6227211FB00755582 /* PhotoDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModelTests.swift; sourceTree = "<group>"; };
 		A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8EE3FC2790B7E9000F929EA /* Pods-codeChallengeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeAppTests/Pods-codeChallengeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codeChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,6 +377,8 @@
 			isa = PBXGroup;
 			children = (
 				8CB86CE022720D2D00755582 /* PhotoListViewModelTests.swift */,
+				8CB86CE42272102E00755582 /* PhotoListItemCellViewModelTests.swift */,
+				8CB86CE6227211FB00755582 /* PhotoDetailViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -685,12 +691,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB86CE7227211FB00755582 /* PhotoDetailViewModelTests.swift in Sources */,
 				8CB86CCE2271416F00755582 /* NetworkManagerTests.swift in Sources */,
 				8CB86CDE22720AA200755582 /* UnitTestConstants.swift in Sources */,
 				8CB86CCC22713AE100755582 /* PhotoTests.swift in Sources */,
 				8CB86CCA2270C35000755582 /* EndpointTests.swift in Sources */,
 				8CB86C7B22709DAD00755582 /* DependencyInjectorTests.swift in Sources */,
 				8CB86CE122720D2D00755582 /* PhotoListViewModelTests.swift in Sources */,
+				8CB86CE52272102E00755582 /* PhotoListItemCellViewModelTests.swift in Sources */,
 				8CB86CDC2272084200755582 /* ApiManagerTests.swift in Sources */,
 				8CB86CD02271E15400755582 /* DatabaseManagerTests.swift in Sources */,
 			);
