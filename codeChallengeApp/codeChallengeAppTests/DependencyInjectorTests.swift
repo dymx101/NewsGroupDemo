@@ -17,6 +17,7 @@ class codeChallengeAppTests: XCTestCase {
         XCTAssertNotNil(injector.resolve(PhotoListViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
         XCTAssertNotNil(injector.resolve(PhotoDetailViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
         XCTAssertNotNil(injector.resolve(PhotoListItemCellViewModelProtocol.self), "PhotoListViewModelProtocol should be resolved")
+        XCTAssertNotNil(injector.resolve(NetworkManagerProtocol.self), "PhotoListViewModelProtocol should be resolved")
     }
 
 }

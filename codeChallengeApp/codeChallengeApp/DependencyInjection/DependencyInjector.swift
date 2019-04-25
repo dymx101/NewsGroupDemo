@@ -32,5 +32,9 @@ class DependencyInjector {
         worker.register(PhotoListItemCellViewModelProtocol.self) { _ in
             PhotoListItemCellViewModel()
         }
+        
+        worker.register(NetworkManagerProtocol.self) { _ in
+            NetworkManager.default
+        }
     }
 }
