@@ -40,6 +40,7 @@
 		8CB86CD92272081500755582 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CD82272081500755582 /* ApiError.swift */; };
 		8CB86CDC2272084200755582 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CDB2272084200755582 /* ApiManagerTests.swift */; };
 		8CB86CDE22720AA200755582 /* UnitTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CDD22720AA200755582 /* UnitTestConstants.swift */; };
+		8CB86CE122720D2D00755582 /* PhotoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE022720D2D00755582 /* PhotoListViewModelTests.swift */; };
 		F50B9B5159C32F096F4516C0 /* Pods_codeChallengeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB15F6E0DB92A5252CB9178 /* Pods_codeChallengeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		8CB86CD82272081500755582 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		8CB86CDB2272084200755582 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
 		8CB86CDD22720AA200755582 /* UnitTestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestConstants.swift; sourceTree = "<group>"; };
+		8CB86CE022720D2D00755582 /* PhotoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModelTests.swift; sourceTree = "<group>"; };
 		A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8EE3FC2790B7E9000F929EA /* Pods-codeChallengeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeAppTests/Pods-codeChallengeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codeChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,12 +177,12 @@
 		8CB86C7922709DAD00755582 /* codeChallengeAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				8CB86CE322720EC600755582 /* Models */,
+				8CB86CE222720EB400755582 /* Database */,
+				8CB86CDF22720D1C00755582 /* ViewModels */,
 				8CB86CDA2272083300755582 /* Network */,
 				8CB86C7A22709DAD00755582 /* DependencyInjectorTests.swift */,
-				8CB86CC92270C35000755582 /* EndpointTests.swift */,
 				8CB86C7C22709DAD00755582 /* Info.plist */,
-				8CB86CCB22713AE100755582 /* PhotoTests.swift */,
-				8CB86CCF2271E15400755582 /* DatabaseManagerTests.swift */,
 				8CB86CDD22720AA200755582 /* UnitTestConstants.swift */,
 			);
 			path = codeChallengeAppTests;
@@ -360,10 +362,35 @@
 		8CB86CDA2272083300755582 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8CB86CC92270C35000755582 /* EndpointTests.swift */,
 				8CB86CCD2271416F00755582 /* NetworkManagerTests.swift */,
 				8CB86CDB2272084200755582 /* ApiManagerTests.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		8CB86CDF22720D1C00755582 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8CB86CE022720D2D00755582 /* PhotoListViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8CB86CE222720EB400755582 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8CB86CCF2271E15400755582 /* DatabaseManagerTests.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8CB86CE322720EC600755582 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CB86CCB22713AE100755582 /* PhotoTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C557E420128BA3A99381B191 /* Frameworks */ = {
@@ -663,6 +690,7 @@
 				8CB86CCC22713AE100755582 /* PhotoTests.swift in Sources */,
 				8CB86CCA2270C35000755582 /* EndpointTests.swift in Sources */,
 				8CB86C7B22709DAD00755582 /* DependencyInjectorTests.swift in Sources */,
+				8CB86CE122720D2D00755582 /* PhotoListViewModelTests.swift in Sources */,
 				8CB86CDC2272084200755582 /* ApiManagerTests.swift in Sources */,
 				8CB86CD02271E15400755582 /* DatabaseManagerTests.swift in Sources */,
 			);
