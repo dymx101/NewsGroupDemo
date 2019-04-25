@@ -4,11 +4,34 @@
 - integrate libraries using cocoapods
 - DI class
 - Endpoint class
-
-### TODO
 - Photo class
 - NetworkManager
--DatabaseManager
+- DatabaseManager
+- Reachability
+- ViewModels
+
+### TODO
+- list screen
+  * pull to refresh
+- detail screen
+- coordinators
+- add doc comments
+- app icon
+- launch screen
+
+### Visual design & effects
+- round corner
+- image title/background
+- transition animations
+- transparent out the navigation title when scrolling
+
+### Optional Tasks
+- UI tests
+- relayout collection view
+   * layout change animations
+- search for image by name
+- add favorite
+- about me
 
 
 ##  Library needed
