@@ -9,6 +9,7 @@
 import Foundation
 
 protocol PhotoListItemCellViewModelProtocol {
+    var photo: Photo? {get set}
     var imageUrl: String {get}
     var title: String {get}
 }

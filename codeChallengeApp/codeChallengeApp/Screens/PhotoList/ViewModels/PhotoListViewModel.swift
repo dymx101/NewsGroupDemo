@@ -6,11 +6,12 @@
 //  Copyright © 2019 Yiming Dong. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol PhotoListViewModelProtocol {
     var title: String {get set}
     var photos: [Photo] {get}
+    var photosInRow: Int {get}
     
     init(apiManager: ApiManagerProtocol, databaseManager: DatabaseManagerProtocol)
     func getPhotos(refresh: Bool, completion: @escaping (Error?) -> Void)
@@ -19,6 +20,10 @@ protocol PhotoListViewModelProtocol {
 final class PhotoListViewModel: PhotoListViewModelProtocol {
     var title: String = Localized(key: "Gallery")
     var photos: [Photo] = []
+    
+    var photosInRow: Int {
+        return (UI_USER_INTERFACE_IDIOM() == .pad) ? 5 : 3
+    }
     
     private var apiManager: ApiManagerProtocol
     private var databaseManager: DatabaseManagerProtocol

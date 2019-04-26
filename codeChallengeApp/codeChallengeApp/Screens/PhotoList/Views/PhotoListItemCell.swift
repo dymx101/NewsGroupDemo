@@ -8,8 +8,12 @@
 
 import UIKit
 
-class PhotoListItemCell: UICollectionViewCell {
-
+class PhotoListItemCell: BaseCollectionViewCell {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var viewModel: PhotoListItemCellViewModelProtocol?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
