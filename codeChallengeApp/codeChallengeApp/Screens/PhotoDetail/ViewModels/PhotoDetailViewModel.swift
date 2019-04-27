@@ -10,15 +10,17 @@ import Foundation
 
 protocol PhotoDetailViewModelProtocol {
     var photo: Photo? {get set}
-    var imageUrl: String {get}
+    var imageUrl: URL? {get}
     var title: String {get}
 }
 
 final class PhotoDetailViewModel: PhotoDetailViewModelProtocol {
     var photo: Photo?
     
-    var imageUrl: String {
-        return photo?.url ?? ""
+    var imageUrl: URL? {
+        guard let url = photo?.url else {return nil}
+        
+        return URL(string: url)
     }
     
     var title: String {

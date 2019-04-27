@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoDetailViewController: BaseViewController {
 
@@ -22,5 +23,15 @@ class PhotoDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateUI()
+    }
+    
+    private func updateUI() {
+        lblTitle.text = viewModel.title
+        if let url = viewModel.imageUrl {
+            imageView.kf.indicatorType = .activity
+            imageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
+        }
     }
 }

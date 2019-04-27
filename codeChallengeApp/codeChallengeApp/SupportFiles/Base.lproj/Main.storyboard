@@ -64,11 +64,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJr-HJ-Te7">
-                                <rect key="frame" x="0.0" y="835" width="414" height="61"/>
+                                <rect key="frame" x="0.0" y="826.5" width="414" height="69.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="This is a test image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BO-fQ-O0n">
-                                        <rect key="frame" x="16" y="16" width="382" height="29"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="This is a test image" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BO-fQ-O0n">
+                                        <rect key="frame" x="16" y="16" width="382" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -78,7 +78,7 @@
                                     <constraint firstItem="7BO-fQ-O0n" firstAttribute="top" secondItem="JJr-HJ-Te7" secondAttribute="top" constant="16" id="3qj-Jk-QAy"/>
                                     <constraint firstAttribute="trailing" secondItem="7BO-fQ-O0n" secondAttribute="trailing" constant="16" id="4qt-WV-nOd"/>
                                     <constraint firstItem="7BO-fQ-O0n" firstAttribute="leading" secondItem="JJr-HJ-Te7" secondAttribute="leading" constant="16" id="APj-lT-kPR"/>
-                                    <constraint firstAttribute="bottom" secondItem="7BO-fQ-O0n" secondAttribute="bottom" constant="16" id="PTK-Dh-9B0"/>
+                                    <constraint firstAttribute="bottom" secondItem="7BO-fQ-O0n" secondAttribute="bottom" constant="32" id="PTK-Dh-9B0"/>
                                 </constraints>
                             </view>
                         </subviews>

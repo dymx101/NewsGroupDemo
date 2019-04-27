@@ -20,10 +20,7 @@ class PhotoListItemCell: BaseCollectionViewCell {
     
     var viewModel: PhotoListItemCellViewModelProtocol? {
         didSet {
-            if let urlString = viewModel?.imageUrl, let url = URL(string: urlString) {
-                imageView.kf.indicatorType = .activity
-                imageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
-            }
+            updateUI()
         }
     }
     
@@ -31,5 +28,11 @@ class PhotoListItemCell: BaseCollectionViewCell {
         super.awakeFromNib()
         backgroundColor = UIColor.clear
     }
-
+    
+    private func updateUI() {
+        if let url = viewModel?.imageUrl {
+            imageView.kf.indicatorType = .activity
+            imageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
+        }
+    }
 }

@@ -10,15 +10,17 @@ import Foundation
 
 protocol PhotoListItemCellViewModelProtocol {
     var photo: Photo? {get set}
-    var imageUrl: String {get}
+    var imageUrl: URL? {get}
     var title: String {get}
 }
 
 final class PhotoListItemCellViewModel: PhotoListItemCellViewModelProtocol {
     var photo: Photo?
     
-    var imageUrl: String {
-        return photo?.thumbnailUrl ?? ""
+    var imageUrl: URL? {
+        guard let url = photo?.thumbnailUrl else {return nil}
+        
+        return URL(string: url)
     }
     
     var title: String {
