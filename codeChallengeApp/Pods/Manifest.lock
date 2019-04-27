@@ -6,7 +6,6 @@ PODS:
   - Realm/Headers (3.7.6)
   - RealmSwift (3.7.6):
     - Realm (= 3.7.6)
-  - SnapKit (4.0.1)
   - SVProgressHUD (2.2.5)
   - Swinject (2.5.0)
 
@@ -14,7 +13,6 @@ DEPENDENCIES:
   - Alamofire (~> 4.8.0)
   - Kingfisher (~> 4.10.1)
   - RealmSwift (~> 3.7.4)
-  - SnapKit (~> 4.0.0)
   - SVProgressHUD (~> 2.2.5)
   - Swinject (~> 2.5.0)
 
@@ -24,7 +22,6 @@ SPEC REPOS:
     - Kingfisher
     - Realm
     - RealmSwift
-    - SnapKit
     - SVProgressHUD
     - Swinject
 
@@ -33,10 +30,9 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
   RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
-  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: a72b44368406081304a3d0c8884a8c44e8cb618a
+PODFILE CHECKSUM: 555385baf8536d12f7a6d783d2f0c514d743a62d
 
 COCOAPODS: 1.5.3

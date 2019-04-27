@@ -83,7 +83,7 @@
 		8CB86C8122709DAD00755582 /* codeChallengeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeChallengeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB86C8522709DAD00755582 /* codeChallengeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeChallengeAppUITests.swift; sourceTree = "<group>"; };
 		8CB86C8722709DAD00755582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CB86C9422709DFA00755582 /* dev_blueprint.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dev_blueprint.md; sourceTree = "<group>"; };
+		8CB86C9422709DFA00755582 /* app_architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = app_architecture.md; sourceTree = "<group>"; };
 		8CB86C992270B50B00755582 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		8CB86C9B2270B53000755582 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8CB86C9D2270B54600755582 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		8CB86C9322709DCE00755582 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				8CB86C9422709DFA00755582 /* dev_blueprint.md */,
+				8CB86C9422709DFA00755582 /* app_architecture.md */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
@@ -666,7 +666,6 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -678,7 +677,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
