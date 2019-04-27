@@ -12,10 +12,12 @@ import Alamofire
 public typealias NetworkCompletion<T: Decodable> = (T?, Error?) -> Void
 public typealias ProgressHandler = (Double) -> Void
 
+/// protocol of network manager
 protocol NetworkManagerProtocol {
-    func get<T: Decodable>(endpoint: Endpoint, responseType: T.Type, completion: @escaping NetworkCompletion<T>)
+    func request<T: Decodable>(endpoint: Endpoint, responseType: T.Type, completion: @escaping NetworkCompletion<T>)
 }
 
+/// network manager handles the general network request and response
 class NetworkManager: NetworkManagerProtocol {
     
     static let `default` = NetworkManager()
@@ -25,7 +27,12 @@ class NetworkManager: NetworkManagerProtocol {
         return sm
     }()
     
-    func get<T: Decodable>(endpoint: Endpoint, responseType: T.Type, completion: @escaping NetworkCompletion<T>) {
+    /// send a request
+    ///
+    /// - parameter endpoint: the endpoint object of an api
+    /// - parameter responseType: the type of the response object, must conform to `Decodable`
+    /// - parameter completion: callback block when request got a response or error
+    func request<T: Decodable>(endpoint: Endpoint, responseType: T.Type, completion: @escaping NetworkCompletion<T>) {
         guard let urlRequest = try? endpoint.asURLRequest() else {return}
         
         sessionManager.request(urlRequest).responseData { (response) in

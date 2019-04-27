@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Defines the colors used in this app
 extension UIColor {
     static var primary: UIColor = UIColor(white: 0.14, alpha: 1)
     static var accent: UIColor = UIColor.orange

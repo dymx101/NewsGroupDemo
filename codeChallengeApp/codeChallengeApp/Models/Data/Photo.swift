@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 
+/// the model class for `Photo`
 class Photo: Object, Decodable {
     
     @objc dynamic var albumId: Int = 0

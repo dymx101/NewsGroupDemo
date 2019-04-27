@@ -17,6 +17,7 @@ protocol PhotoListViewModelProtocol {
     func getPhotos(refresh: Bool, completion: @escaping (Error?) -> Void)
 }
 
+/// the view model for photo list view controller
 final class PhotoListViewModel: PhotoListViewModelProtocol {
     var title: String = Localized(key: "Gallery")
     var photos: [Photo] = []

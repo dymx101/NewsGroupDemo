@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// the coordinator of the photo detail screen
 class PhotoDetailCoordinator: Coordinator {
     private let navigationController: UINavigationController
     private var photo: Photo?

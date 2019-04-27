@@ -11,6 +11,7 @@ import Alamofire
 
 typealias NetworkStatus = NetworkReachabilityManager.NetworkReachabilityStatus
 
+/// Rechability manager observes the network reachability
 class ReachabilityManager {
     
     static let shared = ReachabilityManager()
@@ -19,6 +20,9 @@ class ReachabilityManager {
     
     private(set) var status = NetworkStatus.unknown
     
+    /// start listening to the network reachability
+    ///
+    /// - parameter onStatusChange: the handler block when observed a network status change
     func startListening(onStatusChange: @escaping (NetworkStatus) -> Void) {
         
         reachabilityManager?.listener = { [weak self] status in

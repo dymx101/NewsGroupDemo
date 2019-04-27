@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// the coordinator for photo list screen
 class PhotoListCoordinator: Coordinator {
     private let navigationController: UINavigationController
     

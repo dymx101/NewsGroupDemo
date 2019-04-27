@@ -9,10 +9,13 @@
 import UIKit
 import SVProgressHUD
 
+/// delegate of the photo list view controller
 protocol PhotoListViewControllerDelegate: class {
+    /// show the photo detail controller
     func showDetail(_ photo: Photo)
 }
 
+/// the view controller of phot list
 class PhotoListViewController: BaseViewController {
     
     weak var delegate: PhotoListViewControllerDelegate?

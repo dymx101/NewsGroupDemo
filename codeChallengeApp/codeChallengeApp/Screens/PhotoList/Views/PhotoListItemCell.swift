@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 
+/// the collection view cell of a photo list item
 class PhotoListItemCell: BaseCollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView! {

@@ -9,17 +9,27 @@
 import Foundation
 import RealmSwift
 
+/// protocol of database manager
 protocol DatabaseManagerProtocol {
     
     init(type: DatabaseType)
     
+    /// save a photo to the database
     func savePhoto(_ photo: Photo)
+    
+    /// save a list of photos to the database
     func savePhotos(_ photos: [Photo])
     
+    /// load a photo from the database by id
     func loadPhoto(id: Int) -> Photo?
+    
+    /// load all the photos from database
     func loadAllPhotos() -> [Photo]
     
+    /// remove a photo from the database by id
     func removePhoto(id: Int)
+    
+    /// remove all the photos from database
     func removeAllPhotos()
 }
 

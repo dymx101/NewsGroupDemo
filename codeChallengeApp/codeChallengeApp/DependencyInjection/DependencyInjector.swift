@@ -9,6 +9,7 @@
 import Foundation
 import Swinject
 
+/// The manager of Dependency Injection
 class DependencyInjector {
     public static let shared = DependencyInjector()
     

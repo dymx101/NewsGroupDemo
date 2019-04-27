@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// the coordinator of the application
 class ApplicationCoordinator: Coordinator {
     
     let window: UIWindow

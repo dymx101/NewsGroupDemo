@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 
+/// the view controller of the photo detail screen
 class PhotoDetailViewController: BaseViewController {
 
     var viewModel = DependencyInjector.shared.resolve(PhotoDetailViewModelProtocol.self)!

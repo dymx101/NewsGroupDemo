@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// the custom api error
 enum ApiError: String, Error {
     case general
     

@@ -14,6 +14,7 @@ protocol PhotoListItemCellViewModelProtocol {
     var title: String {get}
 }
 
+/// the view model for photo list item cell
 final class PhotoListItemCellViewModel: PhotoListItemCellViewModelProtocol {
     var photo: Photo?
     

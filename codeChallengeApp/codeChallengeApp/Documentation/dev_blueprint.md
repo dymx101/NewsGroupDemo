@@ -11,9 +11,6 @@
 - ViewModels
 - list screen
     * pull to refresh
-
-### TODO
-
 - detail screen
 - coordinators
 - add doc comments

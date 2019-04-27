@@ -14,6 +14,7 @@ protocol PhotoDetailViewModelProtocol {
     var title: String {get}
 }
 
+/// the view model of the photo detail view controller
 final class PhotoDetailViewModel: PhotoDetailViewModelProtocol {
     var photo: Photo?
     

@@ -8,11 +8,13 @@
 
 import Foundation
 
+/// protocol of api manager
 protocol ApiManagerProtocol {
     init(networkManager: NetworkManagerProtocol)
     func getPhotos(completion:@escaping (Result<[Photo], Error>) -> Void)
 }
 
+/// api manager manage all the api calls
 final class ApiManager: ApiManagerProtocol {
     
     private var networkManager: NetworkManagerProtocol
@@ -21,8 +23,11 @@ final class ApiManager: ApiManagerProtocol {
         self.networkManager = networkManager
     }
     
+    /// get photos from server
+    ///
+    /// - parameter completion: a Result object, contains response data or error
     func getPhotos(completion: @escaping (Result<[Photo], Error>) -> Void) {
-        networkManager.get(endpoint: .photos, responseType: [Photo].self) { (photos, error) in
+        networkManager.request(endpoint: .photos, responseType: [Photo].self) { (photos, error) in
             if let photos = photos {
                 completion(.success(photos))
             } else if let error = error {

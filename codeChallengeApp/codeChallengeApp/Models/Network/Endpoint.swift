@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 
+/// The endpoint of api
 enum Endpoint: URLRequestConvertible {
     
     case photos

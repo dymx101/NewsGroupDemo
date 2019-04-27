@@ -8,6 +8,10 @@
 
 import Foundation
 
+/// Get the localized string by a key
+///
+/// - parameter key: The key for the localized string
+/// - returns: Localized string
 func Localized(key: String) -> String {
     return NSLocalizedString(key, comment: key)
 }
