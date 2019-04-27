@@ -16,13 +16,13 @@ class PhotoListItemCellViewModelTests: XCTestCase {
         photo.id = 1
         photo.title = "test title"
         photo.albumId = 1
-        photo.url = "test url"
-        photo.thumbnailUrl = "test thumbnail url"
+        photo.url = "http://www.youtube.com"
+        photo.thumbnailUrl = "http://www.google.com"
         
         let testObject = PhotoListItemCellViewModel()
         testObject.photo = photo
         
         XCTAssertEqual(testObject.title, photo.title, "should have the same title as photo")
-        XCTAssertEqual(testObject.imageUrl, photo.thumbnailUrl, "should have the correct image url")
+        XCTAssertEqual(testObject.imageUrl?.absoluteString, photo.thumbnailUrl, "should have the correct image url")
     }
 }

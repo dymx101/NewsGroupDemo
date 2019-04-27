@@ -30,15 +30,10 @@ class PhotoListViewModelTests: XCTestCase {
     func test_getPhotos_should_succeed() {
         let expect = expectation(description: "request should be complete")
         
-        testObject.getPhotos(refresh: false) { (results) in
+        testObject.getPhotos(refresh: false) { (error) in
             expect.fulfill()
             
-            do {
-                let photos = try results.get()
-                XCTAssertNotNil(photos, "photo list should not be nil")
-            } catch {
-                XCTFail("there should be any errors")
-            }
+            XCTAssertNil(error, "get photo list should not have error")
         }
         
         wait(for: [expect], timeout: EXPECTATION_TIME_OUT)
