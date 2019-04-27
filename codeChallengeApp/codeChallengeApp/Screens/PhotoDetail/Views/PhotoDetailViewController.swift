@@ -10,6 +10,8 @@ import UIKit
 
 class PhotoDetailViewController: BaseViewController {
 
+    var viewModel = DependencyInjector.shared.resolve(PhotoDetailViewModelProtocol.self)!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleContainerView: UIView! {
         didSet {

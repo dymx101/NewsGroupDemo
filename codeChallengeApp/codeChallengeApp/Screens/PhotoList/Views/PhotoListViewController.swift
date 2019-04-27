@@ -9,7 +9,13 @@
 import UIKit
 import SVProgressHUD
 
+protocol PhotoListViewControllerDelegate: class {
+    func showDetail(_ photo: Photo)
+}
+
 class PhotoListViewController: BaseViewController {
+    
+    weak var delegate: PhotoListViewControllerDelegate?
     
     let refreshControl = UIRefreshControl()
     
@@ -98,9 +104,7 @@ extension PhotoListViewController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath)
-//        performSegue(withIdentifier: "showDetail", sender: cell)
-        
-        print("showDetail: \(indexPath.item)")
+        delegate?.showDetail(viewModel.photos[indexPath.item])
+        print("showDetail at index: \(indexPath.item)")
     }
 }

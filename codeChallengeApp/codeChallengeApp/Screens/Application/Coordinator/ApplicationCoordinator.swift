@@ -12,19 +12,17 @@ class ApplicationCoordinator: Coordinator {
     
     let window: UIWindow
     let navigationController: UINavigationController
+    var listCoordinator: PhotoListCoordinator?
     
-    let photoListCoordinator: PhotoListCoordinator
-    
-    init(window: UIWindow) {
-        
-        self.window = window
+    init() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         navigationController = UINavigationController()
-        
-        photoListCoordinator = PhotoListCoordinator(navigationController: navigationController)
     }
     
     func start() {
         window.rootViewController = navigationController
-        photoListCoordinator.start()
+        listCoordinator = PhotoListCoordinator(navigationController: navigationController)
+        listCoordinator?.start()
+        window.makeKeyAndVisible()
     }
 }

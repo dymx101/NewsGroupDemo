@@ -13,7 +13,7 @@ import SVProgressHUD
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private var applicationCoordinator: ApplicationCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -25,8 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         customNavigationBar()
         
-        let appCoordinator = ApplicationCoordinator(window: self.window!)
-        appCoordinator.start()
+        applicationCoordinator = ApplicationCoordinator()
+        self.window = applicationCoordinator?.window
+        applicationCoordinator?.start()
         
         return true
     }
