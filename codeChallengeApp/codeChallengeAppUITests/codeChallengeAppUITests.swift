@@ -16,7 +16,7 @@ class codeChallengeAppUITests: XCTestCase {
         continueAfterFailure = false
         
         app = XCUIApplication()
-        app.launchEnvironment = ["UITEST_DISABLE_ANIMATIONS" : "YES"]
+        app.launchArguments = ["ResetDefaults", "NoAnimations", "UserHasRegistered"]
         app.launch()
     }
 
