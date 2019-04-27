@@ -48,6 +48,7 @@ final class PhotoListViewModel: PhotoListViewModelProtocol {
             switch results {
             case .success(let data):
                 self?.photos = data
+                self?.databaseManager.savePhotos(data)
                 completion(nil)
             case .failure(let error):
                 completion(error)

@@ -11,6 +11,8 @@ import SVProgressHUD
 
 class PhotoListViewController: BaseViewController {
     
+    let refreshControl = UIRefreshControl()
+    
     @IBOutlet weak var photoListView: UICollectionView! {
         didSet {
             let nib = UINib(nibName: PhotoListItemCell.NIB_NAME, bundle: nil)
@@ -23,6 +25,10 @@ class PhotoListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupPullToRefresh()
+        
+        // Start loading photos
+        refreshControl.beginRefreshing()
         loadPhotos()
     }
     
@@ -30,10 +36,19 @@ class PhotoListViewController: BaseViewController {
         updateListLayout()
     }
     
+    private func setupPullToRefresh() {
+        photoListView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshPhotos), for: .valueChanged)
+    }
+    
+    @objc private func refreshPhotos() {
+        loadPhotos(refresh: true)
+    }
+    
     private func loadPhotos(refresh: Bool = false) {
-        SVProgressHUD.show()
         viewModel.getPhotos(refresh: refresh) { [weak self] (error) in
-            SVProgressHUD.dismiss()
+            self?.refreshControl.endRefreshing()
+            
             if let error = error {
                 SVProgressHUD.showError(withStatus: Localized(key: "msg_get_photos_error"))
                 print("load photos error: \(error.localizedDescription)")
