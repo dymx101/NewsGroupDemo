@@ -15,6 +15,7 @@ class PhotoListViewController: BaseViewController {
     
     @IBOutlet weak var photoListView: UICollectionView! {
         didSet {
+            photoListView.backgroundColor = UIColor.clear
             let nib = UINib(nibName: PhotoListItemCell.NIB_NAME, bundle: nil)
             photoListView.register(nib, forCellWithReuseIdentifier: PhotoListItemCell.REGISTER_ID)
         }

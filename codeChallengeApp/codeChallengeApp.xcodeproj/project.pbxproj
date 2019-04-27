@@ -45,6 +45,7 @@
 		8CB86CE7227211FB00755582 /* PhotoDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE6227211FB00755582 /* PhotoDetailViewModelTests.swift */; };
 		8CB86CE92272153900755582 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE82272153900755582 /* ReachabilityManager.swift */; };
 		8CB86CEB22728BC200755582 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CEA22728BC200755582 /* BaseCollectionViewCell.swift */; };
+		8CB86CED22741BF100755582 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CEC22741BF100755582 /* UIColor+Custom.swift */; };
 		F50B9B5159C32F096F4516C0 /* Pods_codeChallengeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB15F6E0DB92A5252CB9178 /* Pods_codeChallengeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		8CB86CE6227211FB00755582 /* PhotoDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModelTests.swift; sourceTree = "<group>"; };
 		8CB86CE82272153900755582 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		8CB86CEA22728BC200755582 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		8CB86CEC22741BF100755582 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 		A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8EE3FC2790B7E9000F929EA /* Pods-codeChallengeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeAppTests/Pods-codeChallengeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codeChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				8CB86CD22271FE6F00755582 /* GlobalFunctions.swift */,
+				8CB86CEC22741BF100755582 /* UIColor+Custom.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -685,6 +688,7 @@
 				8CB86C6622709DAB00755582 /* AppDelegate.swift in Sources */,
 				8CB86CD72272054800755582 /* ApiManager.swift in Sources */,
 				8CB86CC12270BA9000755582 /* PhotoListCoordinator.swift in Sources */,
+				8CB86CED22741BF100755582 /* UIColor+Custom.swift in Sources */,
 				8CB86CD92272081500755582 /* ApiError.swift in Sources */,
 				8CB86CA12270B58000755582 /* PhotoListViewController.swift in Sources */,
 				8CB86CA82270B67700755582 /* BaseViewController.swift in Sources */,

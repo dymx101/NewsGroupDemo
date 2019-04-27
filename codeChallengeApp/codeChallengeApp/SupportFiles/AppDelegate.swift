@@ -22,7 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 SVProgressHUD.showInfo(withStatus: status.statusString)
             }
         }
+        
+        customNavigationBar()
+        
         return true
+    }
+    
+    private func customNavigationBar() {
+        UINavigationBar.appearance().backgroundColor = UIColor.primary
+        UINavigationBar.appearance().barTintColor = UIColor.primary
+        UINavigationBar.appearance().tintColor = UIColor.accent
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.accent]
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

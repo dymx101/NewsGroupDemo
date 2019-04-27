@@ -29,6 +29,7 @@ class PhotoListItemCell: BaseCollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = UIColor.clear
     }
 
 }
