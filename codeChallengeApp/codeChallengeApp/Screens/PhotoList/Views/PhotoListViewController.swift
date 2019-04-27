@@ -24,6 +24,8 @@ class PhotoListViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = viewModel.title
 
         setupPullToRefresh()
         
@@ -67,9 +69,12 @@ class PhotoListViewController: BaseViewController {
         
         let colletionViewWidth = photoListView.frame.size.width
         let gap = (sectionInsets.left + sectionInsets.right) + itemSpacing * CGFloat(itemCountPerRow - 1)
-        let itemSize = (colletionViewWidth - gap) / CGFloat(itemCountPerRow)
+        let itemWidth = (colletionViewWidth - gap) / CGFloat(itemCountPerRow)
         
-        layout.itemSize = CGSize(width: itemSize, height: itemSize)
+        let itemSize = CGSize(width: itemWidth, height: itemWidth)
+        if layout.itemSize != itemSize {
+            layout.itemSize = itemSize
+        }
     }
 }
 

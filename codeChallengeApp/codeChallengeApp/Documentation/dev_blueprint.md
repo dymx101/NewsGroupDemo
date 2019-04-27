@@ -9,10 +9,11 @@
 - DatabaseManager
 - Reachability
 - ViewModels
+- list screen
+    * pull to refresh
 
 ### TODO
-- list screen
-  * pull to refresh
+
 - detail screen
 - coordinators
 - add doc comments
