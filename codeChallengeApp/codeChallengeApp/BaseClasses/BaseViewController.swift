@@ -9,6 +9,10 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    
+    static var STORYBOARD_ID: String {
+        return String(describing: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

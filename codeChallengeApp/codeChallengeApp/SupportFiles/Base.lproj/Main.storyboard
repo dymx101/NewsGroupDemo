@@ -27,16 +27,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="15" minY="16" maxX="15" maxY="16"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="swg-OC-6DE">
-                                        <rect key="frame" x="15" y="16" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="dQa-b3-NZi"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jef-0t-TXd"/>
@@ -68,9 +59,46 @@
                     <view key="view" contentMode="scaleToFill" id="WIX-SM-pLy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ryO-O2-iwu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJr-HJ-Te7">
+                                <rect key="frame" x="0.0" y="835" width="414" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="This is a test image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BO-fQ-O0n">
+                                        <rect key="frame" x="16" y="16" width="382" height="29"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7BO-fQ-O0n" firstAttribute="top" secondItem="JJr-HJ-Te7" secondAttribute="top" constant="16" id="3qj-Jk-QAy"/>
+                                    <constraint firstAttribute="trailing" secondItem="7BO-fQ-O0n" secondAttribute="trailing" constant="16" id="4qt-WV-nOd"/>
+                                    <constraint firstItem="7BO-fQ-O0n" firstAttribute="leading" secondItem="JJr-HJ-Te7" secondAttribute="leading" constant="16" id="APj-lT-kPR"/>
+                                    <constraint firstAttribute="bottom" secondItem="7BO-fQ-O0n" secondAttribute="bottom" constant="16" id="PTK-Dh-9B0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ryO-O2-iwu" firstAttribute="leading" secondItem="99w-09-1C3" secondAttribute="leading" id="4G5-gJ-cpF"/>
+                            <constraint firstItem="ryO-O2-iwu" firstAttribute="top" secondItem="WIX-SM-pLy" secondAttribute="top" id="AlO-rG-fmi"/>
+                            <constraint firstAttribute="bottom" secondItem="JJr-HJ-Te7" secondAttribute="bottom" id="FS8-84-HNc"/>
+                            <constraint firstItem="ryO-O2-iwu" firstAttribute="trailing" secondItem="99w-09-1C3" secondAttribute="trailing" id="KBJ-Gs-ajh"/>
+                            <constraint firstItem="JJr-HJ-Te7" firstAttribute="trailing" secondItem="99w-09-1C3" secondAttribute="trailing" id="cqu-rS-sUG"/>
+                            <constraint firstAttribute="bottom" secondItem="ryO-O2-iwu" secondAttribute="bottom" id="fw8-mh-n9q"/>
+                            <constraint firstItem="JJr-HJ-Te7" firstAttribute="leading" secondItem="99w-09-1C3" secondAttribute="leading" id="lWt-FI-hCp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="99w-09-1C3"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="ryO-O2-iwu" id="6uR-Ct-4ZC"/>
+                        <outlet property="lblTitle" destination="7BO-fQ-O0n" id="y77-4L-u0S"/>
+                        <outlet property="titleContainerView" destination="JJr-HJ-Te7" id="l9C-7U-lJP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziG-aj-3pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

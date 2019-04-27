@@ -46,6 +46,7 @@
 		8CB86CE92272153900755582 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CE82272153900755582 /* ReachabilityManager.swift */; };
 		8CB86CEB22728BC200755582 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CEA22728BC200755582 /* BaseCollectionViewCell.swift */; };
 		8CB86CED22741BF100755582 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CEC22741BF100755582 /* UIColor+Custom.swift */; };
+		8CB86CF1227421FA00755582 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB86CF0227421FA00755582 /* ApplicationCoordinator.swift */; };
 		F50B9B5159C32F096F4516C0 /* Pods_codeChallengeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB15F6E0DB92A5252CB9178 /* Pods_codeChallengeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		8CB86CE82272153900755582 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		8CB86CEA22728BC200755582 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		8CB86CEC22741BF100755582 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		8CB86CF0227421FA00755582 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		A3FA45787445496DC5402C83 /* Pods-codeChallengeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeApp/Pods-codeChallengeApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8EE3FC2790B7E9000F929EA /* Pods-codeChallengeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeChallengeAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codeChallengeAppTests/Pods-codeChallengeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E909F9EF7F655E47FBC5B2E2 /* Pods_codeChallengeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codeChallengeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,6 +250,7 @@
 		8CB86C982270B4DA00755582 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8CB86CEE227421DE00755582 /* Application */,
 				8CB86C952270B48000755582 /* PhotoList */,
 				8CB86C962270B49600755582 /* PhotoDetail */,
 			);
@@ -406,6 +409,22 @@
 				8CB86CCB22713AE100755582 /* PhotoTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8CB86CEE227421DE00755582 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8CB86CEF227421EA00755582 /* Coordinator */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8CB86CEF227421EA00755582 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8CB86CF0227421FA00755582 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		C557E420128BA3A99381B191 /* Frameworks */ = {
@@ -686,6 +705,7 @@
 				8CB86C9E2270B54600755582 /* DatabaseManager.swift in Sources */,
 				8CB86CC42270BAC100755582 /* PhotoDetailCoordinator.swift in Sources */,
 				8CB86C6622709DAB00755582 /* AppDelegate.swift in Sources */,
+				8CB86CF1227421FA00755582 /* ApplicationCoordinator.swift in Sources */,
 				8CB86CD72272054800755582 /* ApiManager.swift in Sources */,
 				8CB86CC12270BA9000755582 /* PhotoListCoordinator.swift in Sources */,
 				8CB86CED22741BF100755582 /* UIColor+Custom.swift in Sources */,

@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         customNavigationBar()
         
+        let appCoordinator = ApplicationCoordinator(window: self.window!)
+        appCoordinator.start()
+        
         return true
     }
     
