@@ -10,23 +10,52 @@ import XCTest
 
 class codeChallengeAppUITests: XCTestCase {
 
+    var app: XCUIApplication!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        app = XCUIApplication()
+        app.launchEnvironment = ["UITEST_DISABLE_ANIMATIONS" : "YES"]
+        app.launch()
     }
 
     func test_ShouldShowDetail() {
+        let photoListRootView = app.otherElements.element(matching: .other, identifier: "id_photo_list_view")
         
+        waitForElementToAppear(element: photoListRootView)
+        
+        XCTAssert(photoListRootView.exists)
+        
+        let firstCell = app.cells.element(matching: .cell, identifier: "id_list_cell_0")
+        
+        waitForElementToAppear(element: firstCell)
+        
+        XCTAssert(firstCell.exists)
+        
+        firstCell.tap()
+        
+        let titleLabel = app.staticTexts.element(matching: .any, identifier: "id_photo_detail_label")
+        
+        XCTAssertEqual(titleLabel.label, "accusamus beatae ad facilis cum similique qui sunt")
+        
+        app.buttons["Photo Gallery"].tap()
+        
+        waitForElementToAppear(element: photoListRootView)
+        
+        XCTAssert(photoListRootView.exists)
+    }
+    
+    private func waitForElementToAppear(element: XCUIElement, timeout: TimeInterval = 5,  file: String = #file, line: UInt = #line) {
+        let existsPredicate = NSPredicate(format: "exists == true")
+        
+        expectation(for: existsPredicate, evaluatedWith: element, handler: nil)
+        
+        waitForExpectations(timeout: timeout) { (error) -> Void in
+            if (error != nil) {
+                let message = "Failed to find \(element) after \(timeout) seconds."
+                self.recordFailure(withDescription: message, inFile: file, atLine: Int(line), expected: true)
+            }
+        }
     }
 }

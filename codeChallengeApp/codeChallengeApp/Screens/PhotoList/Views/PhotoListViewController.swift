@@ -99,6 +99,7 @@ extension PhotoListViewController: UICollectionViewDataSource, UICollectionViewD
         var cellViewModel = DependencyInjector.shared.resolve(PhotoListItemCellViewModelProtocol.self)
         cellViewModel?.photo = photo
         cell.viewModel = cellViewModel
+        cell.accessibilityIdentifier = "id_list_cell_\(indexPath.item)"
         
         return cell
     }
